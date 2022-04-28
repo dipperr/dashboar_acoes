@@ -4,7 +4,7 @@ import plotly.express as px
 import streamlit as st
 import datetime
 
-dataframe = pd.read_csv('./dataset_merge/ACOES.csv', index_col='Date', parse_dates=True)
+dataframe = pd.read_csv('ACOES.csv', index_col='Date', parse_dates=True)
 data_melt = pd.melt(dataframe.reset_index(), id_vars='Date', var_name='acoes', value_name='precos')
 
 # Lista de Ações
